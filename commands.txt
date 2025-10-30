@@ -1,0 +1,1 @@
+build and run - gcc main.c games.c utilities.c gameMenu.c -o main && ./main

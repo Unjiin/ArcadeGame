@@ -20,7 +20,7 @@ void startGameMenu(int* isExit, int* difficulty, int* exp) {
 +------------------+\n\
 Your choose: ");
         scanf("%d", &userInput);
-        while (userInput < 0 || userInput > 2) {
+        while (userInput < 0 || userInput > 3) {
             printf("Unexpected number\n");
             scanf("%d", &userInput);
         }

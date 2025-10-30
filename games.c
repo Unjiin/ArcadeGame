@@ -113,16 +113,16 @@ int startFindPairsGame(int* difficulty) {
                 cardsStatus[i+4] ? cards[i+4] : 0,
             };
             printf("\
-+------+ +------+ +------+ +------+ +------+\n\
-|      | |      | |      | |      | |      |\n\
-|   %d  | |   %d  | |   %d  | |   %d  | |   %d  |\n\
-|      | |      | |      | |      | |      |\n\
-| T. %d | | T. %d | | T. %d | | T. %d | | T. %d |\n\
-| N. %d | | N. %d | | N. %d | | N. %d | | N. %d |\n\
-+------+ +------+ +------+ +------+ +------+\n", 
-        isOpen[0], isOpen[1], isOpen[2], isOpen[3], isOpen[4],
-        cards[i+0], cards[i+1], cards[i+2], cards[i+3], cards[i+4],
-        i, i+1, i+2, i+3, i+4);
++-------+ +-------+ +-------+ +-------+ +-------+\n\
+|       | |       | |       | |       | |       |\n\
+|   %s  | |   %s  | |   %s  | |   %s  | |   %s  |\n\
+|       | |       | |       | |       | |       |\n\
+| T. %s | | T. %s | | T. %s | | T. %s | | T. %s |\n\
+| N. %s | | N. %s | | N. %s | | N. %s | | N. %s |\n\
++-------+ +-------+ +-------+ +-------+ +-------+\n", 
+        normailizeNumbers[isOpen[0]], normailizeNumbers[isOpen[1]], normailizeNumbers[isOpen[2]], normailizeNumbers[isOpen[3]], normailizeNumbers[isOpen[4]],
+        normailizeNumbers[cards[i+0]], normailizeNumbers[cards[i+1]], normailizeNumbers[cards[i+2]], normailizeNumbers[cards[i+3]], normailizeNumbers[cards[i+4]],
+        normailizeNumbers[i], normailizeNumbers[i+1], normailizeNumbers[i+2], normailizeNumbers[i+3], normailizeNumbers[i+4]);
         }
         scanf("%d", &userInput);
         while (userInput < 0 || userInput >= length*2 || cardsStatus[userInput]) {
